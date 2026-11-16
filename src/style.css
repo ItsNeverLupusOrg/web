@@ -152,3 +152,52 @@ body {
     padding: 2.25rem 0;
   }
 }
+
+/* Link lists */
+.entry-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.entry-item {
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.entry-item:last-child {
+  border-bottom: none;
+}
+
+.editorial-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.875rem 0;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.15s ease, padding-left 0.15s ease;
+}
+
+.editorial-link:hover {
+  color: var(--text-primary);
+  padding-left: 0.25rem;
+}
+
+.editorial-link:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 4px;
+}
+
+.link-arrow {
+  font-size: 0.8125rem;
+  color: var(--text-tertiary);
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.editorial-link:hover .link-arrow {
+  color: var(--accent);
+  transform: translate(2px, -2px);
+}
