@@ -1,64 +1,41 @@
 <!doctype html>
-<html lang="de">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="ItsNeverLupus – Projekte, Ideen und Code." />
-    <title>ItsNeverLupus</title>
+    <meta name="description" content="itsneverlupus – projects, tools and experiments." />
+    <title>itsneverlupus</title>
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container nav">
-        <a class="brand" href="#top">ItsNeverLupus</a>
-        <nav aria-label="Hauptnavigation">
-          <a href="#projekte">Projekte</a>
-          <a href="#ueber">Über</a>
-          <a href="#kontakt">Kontakt</a>
-        </nav>
+    <main class="page-container">
+      <div class="editorial-wrapper">
+        <header class="masthead">
+          <div class="headline-block">
+            <h1 class="main-title">itsneverlupus</h1>
+            <p class="lead-statement">// projects, tools &amp; experiments</p>
+          </div>
+        </header>
+
+        <div class="grid-section">
+          <section class="grid-col" aria-labelledby="projects-heading">
+            <div class="section-header">
+              <span class="col-index mono">01</span>
+              <h2 id="projects-heading" class="section-title">projects</h2>
+            </div>
+            <ul class="entry-list" data-list="projects"></ul>
+          </section>
+
+          <section class="grid-col" aria-labelledby="contact-heading">
+            <div class="section-header">
+              <span class="col-index mono">02</span>
+              <h2 id="contact-heading" class="section-title">contact</h2>
+            </div>
+            <ul class="entry-list" data-list="contact"></ul>
+          </section>
+        </div>
       </div>
-    </header>
-
-    <main id="top">
-      <section class="hero">
-        <div class="container">
-          <p class="eyebrow">Hallo 👋</p>
-          <h1>Wir bauen Dinge fürs Web.</h1>
-          <p class="lead">
-            ItsNeverLupus ist ein kleines Team, das an Webprojekten, Tools und
-            Experimenten arbeitet.
-          </p>
-          <a class="button" href="#projekte">Projekte ansehen</a>
-        </div>
-      </section>
-
-      <section id="projekte" class="section">
-        <div class="container">
-          <h2>Projekte</h2>
-          <div class="cards" id="project-list"></div>
-        </div>
-      </section>
-
-      <section id="ueber" class="section">
-        <div class="container about">
-          <h2>Über uns</h2>
-          <p>
-            Wir mögen einfache Lösungen, sauberen Code und Projekte, die Spass
-            machen. Alles, was wir bauen, ist offen auf GitHub zu finden.
-          </p>
-        </div>
-      </section>
     </main>
-
-    <footer id="kontakt" class="site-footer">
-      <div class="container footer-inner">
-        <p>
-          Kontakt über
-          <a href="https://github.com/ItsNeverLupusOrg" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </p>
-        <p class="copyright">© <span id="year"></span> ItsNeverLupus</p>
-      </div>
-    </footer>
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>
