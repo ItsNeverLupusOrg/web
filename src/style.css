@@ -204,3 +204,14 @@ a.card:hover {
 .footer-inner p {
   margin: 0;
 }
+
+/* Small screens */
+@media (max-width: 520px) {
+  .nav nav {
+    gap: 14px;
+  }
+
+  .hero {
+    padding: 64px 0 48px;
+  }
+}
