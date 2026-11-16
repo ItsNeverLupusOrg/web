@@ -184,3 +184,23 @@ a.card:hover {
   color: var(--muted);
   font-size: 1.05rem;
 }
+
+/* Footer */
+.site-footer {
+  margin-top: 32px;
+  padding: 32px 0;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.footer-inner p {
+  margin: 0;
+}

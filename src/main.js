@@ -24,3 +24,6 @@ function renderProjects(container, items) {
 
 const list = document.getElementById('project-list');
 if (list) renderProjects(list, projects);
+
+const year = document.getElementById('year');
+if (year) year.textContent = String(new Date().getFullYear());
