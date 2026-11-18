@@ -2,7 +2,7 @@
 // Entries with an empty href are hidden until a link is filled in.
 
 export const PROJECT_LINKS = [
-  { label: 'web', href: 'https://github.com/ItsNeverLupusOrg/web', external: true },
+  { label: 'web on github', href: 'https://github.com/ItsNeverLupusOrg/web', external: true },
 ];
 
 export const CONTACT_LINKS = [
